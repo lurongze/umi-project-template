@@ -1,0 +1,15 @@
+{
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  // 安装prettier的vscode插件后配置默认格式化插件
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 补全eslint检测文件类型
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    // 保存的时候检测eslint
+    "source.fixAll.eslint": true
+  },
+  // 保存的时候格式化，会用prettier
+  "editor.formatOnSave": true
+  // "eslint.run": "onSave",
+}
