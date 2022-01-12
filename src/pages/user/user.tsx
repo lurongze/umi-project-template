@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
-import { history, useSelector } from 'umi';
+import { history } from 'umi';
 import RootStoreType from '@/models/store';
 import styles from './user.less';
 
 function UserPage() {
-  const sysName = useSelector((state: RootStoreType) => state.global.sysName);
-
   return (
     <div>
-      <h1 className={styles.title}>Page User {sysName};</h1>
+      <h1 className={styles.title}>Page User</h1>
     </div>
   );
 }

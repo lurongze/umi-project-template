@@ -13,7 +13,7 @@ export interface GlobalModelType {
   reducers: {
     save: Reducer<GlobalModelState>;
   };
-  subscriptions: { setup: Subscription };
+  // subscriptions: { setup: Subscription };
 }
 
 const GlobalModel: GlobalModelType = {
@@ -34,13 +34,13 @@ const GlobalModel: GlobalModelType = {
       };
     },
   },
-  subscriptions: {
-    setup({ dispatch, history }) {
-      return history.listen(({ pathname }) => {
-        console.log('订阅监听pathname的变化：', pathname, dispatch);
-      });
-    },
-  },
+  // subscriptions: {
+  //   setup({ dispatch, history }) {
+  //     return history.listen(({ pathname }) => {
+  //       console.log('订阅监听pathname的变化：', pathname, dispatch);
+  //     });
+  //   },
+  // },
 };
 
 export default GlobalModel;
